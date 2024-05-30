@@ -5,8 +5,6 @@ from PyPDF2 import PdfReader, PdfWriter
 import json
 import io
 from io import BytesIO
-from reportlab.pdfgen import canvas
-from reportlab.lib.pagesizes import letter
 import prompts
 from pylatex import Document, Section, Subsection, Command
 from pylatex.utils import italic, NoEscape
