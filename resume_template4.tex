@@ -1,0 +1,86 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{geometry}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{hyperref}
+
+% Page layout
+\geometry{margin=1in}
+
+% Formatting sections
+\titleformat{\section}{\large\bfseries}{\thesection}{1em}{}
+\titlespacing*{\section}{0pt}{\baselineskip}{\baselineskip}
+
+% Itemize spacing
+\setlist[itemize]{topsep=0pt, partopsep=0pt, parsep=0pt, itemsep=2pt, left=0pt}
+
+% Hyperlink setup
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=blue,
+    pdftitle={Software Engineering Resume},
+    pdfpagemode=FullScreen,
+}
+
+\begin{document}
+
+% Personal Information Section
+\section*{Personal Information}
+\begin{itemize}
+    \item \textbf{Name:} \VAR{personal_information.name}
+    \item \textbf{Address:} \VAR{personal_information.address}
+    \item \textbf{Email:} \href{mailto:\VAR{personal_information.email}}{\VAR{personal_information.email}}
+\end{itemize}
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+  % Loop through education entries
+  \VAR{for education in education}
+    \resumeSubheading
+      {\VAR{education.institution}}{}
+      {\VAR{education.degree}}{\VAR{education.dates}}
+  \resumeSubHeadingListEnd
+
+% Experience Section
+\section*{Experience}
+\begin{itemize}
+    \VAR{experience}
+\end{itemize}
+
+% Projects Section
+\section*{Projects}
+\begin{itemize}
+    \VAR{projects}
+\end{itemize}
+
+% Achievements Section
+\section*{Achievements}
+\begin{itemize}
+    \VAR{achievements}
+\end{itemize}
+
+% Certifications Section
+\section*{Certifications}
+\begin{itemize}
+    \VAR{certifications}
+\end{itemize}
+
+% Skills Section
+\section*{Skills}
+\begin{itemize}
+    \VAR{skills}
+\end{itemize}
+
+% Personal Details Section
+\section*{Personal Details}
+\begin{itemize}
+    \item \textbf{Languages:} \VAR{personal_details.languages}
+    \item \textbf{Nationality:} \VAR{personal_details.nationality}
+    \item \textbf{Hobbies and Interests:} \VAR{personal_details.hobbies_and_interests}
+\end{itemize}
+
+\end{document}

@@ -1,0 +1,101 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{geometry}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{hyperref}
+
+% Page layout
+\geometry{margin=1in}
+
+% Formatting sections
+\titleformat{\section}{\large\bfseries}{\thesection}{1em}{}
+\titlespacing*{\section}{0pt}{\baselineskip}{\baselineskip}
+
+% Itemize spacing
+\setlist[itemize]{topsep=0pt, partopsep=0pt, parsep=0pt, itemsep=2pt, left=0pt}
+
+% Hyperlink setup
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=blue,
+    pdftitle={Software Engineering Resume},
+    pdfpagemode=FullScreen,
+}
+
+\begin{document}
+
+% Personal Information Section
+\section*{Personal Information}
+\begin{itemize}
+    \item \textbf{Name:} Anjani Thanmayee Chandaluri
+    \item \textbf{Address:} Narasaraopet, Andhra Pradesh, India 522601
+    \item \textbf{Email:} \href{mailto:anjanithanmayee4@gmail.com}{anjanithanmayee4@gmail.com}
+\end{itemize}
+
+% Education Section
+\section*{Education}
+\begin{itemize}
+    \begin{itemize}
+\item Narasaraopeta Engineering College, Guntur, Andhra Pradesh, B.Tech - Computer Science And Engineering, 2020-2024, 8.6
+\item Jupiter Junior College, Guntur, Andhra Pradesh, Intermediate, Mpc, 2018-2020, 9.29
+\item Bhashyam High School, Guntur, Andhra Pradesh, Secondary School Of Certificate, 2017-2018, 9.5
+\end{itemize}
+\end{itemize}
+
+% Experience Section
+\section*{Experience}
+\begin{itemize}
+    \begin{itemize}
+\item Front-end Developer Intern, StepOut, Nov 2023 - Jan 2024, ['Contributed to front-end development using React Js', 'Resolved bugs to improve user experience', 'Integrated third-party tools for enhanced functionality']
+\end{itemize}
+\end{itemize}
+
+% Projects Section
+\section*{Projects}
+\begin{itemize}
+    \begin{itemize}
+\item E-Commerce Website, Developed an E-Commerce platform with features like authentication, product listings, cart management, React Js, CSS, Bootstrap, https://onlinemng.ccbp.tech
+\item Jobby App, Built a job search application with authentication, job listings, search, and filter features, React Js, CSS, Bootstrap, API calls, https://atjobbyapp.ccbp.tech/
+\end{itemize}
+\end{itemize}
+
+% Achievements Section
+\section*{Achievements}
+\begin{itemize}
+    \begin{itemize}
+\item Winner of Web development hackathon conducted by Brainovision
+\end{itemize}
+\end{itemize}
+
+% Certifications Section
+\section*{Certifications}
+\begin{itemize}
+    \begin{itemize}
+\item NPTEL Online Certification in Joy of computing using Python
+\item NxtWave Disruptive Technologies in React Js, Node Js, DataBase, Java Script Essentials
+\end{itemize}
+\end{itemize}
+
+% Skills Section
+\section*{Skills}
+\begin{itemize}
+    \begin{itemize}
+\item React Js
+\item HTML
+\item CSS
+\item JavaScript
+\end{itemize}
+\end{itemize}
+
+% Personal Details Section
+\section*{Personal Details}
+\begin{itemize}
+    \item \textbf{Languages:} \VAR{personal_details.languages}
+    \item \textbf{Nationality:} \VAR{personal_details.nationality}
+    \item \textbf{Hobbies and Interests:} \VAR{personal_details.hobbies_and_interests}
+\end{itemize}
+
+\end{document}
