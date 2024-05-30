@@ -20,8 +20,8 @@ def extract_text_from_pdf(uploaded_file):
         page = reader.pages[page]
         text += str(page.extract_text())
     return text
-
-openai_key = 'sk-proj-GUxknP9fVy2zr52SNBy2T3BlbkFJtZxH18MEL0rJzNIeVT9m'
+st.write("Please enter your OpenAI API key below:")
+openai_key = st.text_input("API Key")
 client = OpenAI(api_key=openai_key)
 
 def get_openai_response(system_prompt, user_prompt):
